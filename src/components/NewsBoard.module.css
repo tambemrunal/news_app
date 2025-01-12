@@ -1,0 +1,7 @@
+.NewsContainer{
+    background-color: rgb(235, 230, 230);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* padding-top: 50px; */
+}

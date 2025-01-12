@@ -1,0 +1,207 @@
+
+.NewsCard{
+    max-width: 350px;
+    margin: 10px 10px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    max-height: 600px;
+    /* border: 5px solid red; */
+    background-color: #1a1a1a;
+}
+.NewsCard .card-image{
+    max-width: 350px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+
+/* navbar */
+
+.upper-navbar{
+    display: flex;
+    /* border: 2px solid red ; */
+    height: 100px;
+    background-color: #1a1a1a;
+    width: 100vw;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.160784);
+}
+.logo-div img{
+    height: 200px;
+    width: 200px;
+    /* border: 2px solid red ; */
+}
+.logo-name{
+    /* border: 2px solid black; */
+    font-size: 40px;
+    font-weight: 900;
+    color: #00a8f8;
+    margin-left: -2vw;
+}
+
+.logo-div{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid black; */
+    gap: -20;
+}
+
+.select-items{
+    /* border: 2px solid rgb(24, 25, 23); */
+}
+.both-select-search{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* search div styling */
+.search-div{
+    /* border: 2px solid black; */
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+    
+    
+}
+
+.search-div input{
+    width: 250px;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search-div button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .search-div input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  }
+
+  .search-div button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+
+  .search-div button:active {
+    transform: scale(0.98);
+  }
+
+  /* select item styling */
+
+  .select-items select {
+    width: 270px;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  appearance: none; /* Removes default dropdown arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23333" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658c-.566-.628-.106-1.658.753-1.658h9.592c.86 0 1.32 1.03.753 1.658L8.753 11.14a1 1 0 0 1-1.506 0z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+  
+
+.select-items select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  }
+  
+  /* Hover effect */
+  .select-items select:hover {
+    border-color: #007bff;
+  }
+
+  .select-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+  }
+  
+  
+/* lower navbar */
+.lower-navbar{
+    display: flex;
+  background-color: #0d6efd;
+  color: black;
+  border-bottom: 2px solid #007bff;
+  width: 100vw;
+
+}
+.category-elements ul{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 22px;
+    
+}
+
+.category-elements ul li{
+    list-style: none;
+    
+    
+}
+
+
+.underline-hover {
+    position: relative;
+    display: inline-block;
+    color: black; /* Text color */
+    text-decoration: none; /* Remove default underline */
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Create the underline */
+  .underline-hover::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgb(212, 9, 9); /* Underline color */
+    left: 0;
+    bottom: -3px; /* Space between text and underline */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  /* Expand the underline on hover */
+  .underline-hover:hover::after {
+    width: 100%;
+  }
+  
+  
+
+
+@media (max-width:1200px) {
+    .lower-navbar{
+        /* display: flex; */
+      background-color: #cdfd0d;
+      
+    
+    }
+}
